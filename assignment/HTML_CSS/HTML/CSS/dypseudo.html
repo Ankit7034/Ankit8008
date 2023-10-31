@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.hov {
+  background-color: green;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+.hov:hover {
+  background-color: blue;
+}
+
+a.highlight:hover {
+  color: #ff0000;
+  font-size: 22px;
+} 
+
+.sudo {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+
+.dyna:hover p {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<p>Mouse over the div element below to change its background color:</p>
+
+<div class="hov">Mouse Over Me</div>
+
+<p><a class="highlight" href="#">CSS Syntax</a></p>
+
+
+<div class="dyna">Hover over this div element to show the p element
+    <p class="sudo">Tada! Here I am!</p>
+  </div>
+
+
+</body>
+</html>
