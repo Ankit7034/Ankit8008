@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+      function arrtoobj(arr){
+        let obj={};
+
+        for(let num of arr){
+          if(obj[num]){
+            obj[num]++;
+          }else{
+            obj[num]=1;
+          }
+        }
+        return obj;
+
+      }
+
+      console.log(arrtoobj([1,2,2,3]));
+      console.log(arrtoobj([9,9,9,99]));
+      console.log(arrtoobj([4,3,2,1]));
+
+    </script>
+    
+</body>
+</html>
