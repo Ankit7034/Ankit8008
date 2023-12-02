@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+          background-color: wheat;
+          width: 100px;
+          border: 1px solid green;
+        }
+        </style>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>  
+       
+      <button id="go"> Run</button>
+      <div id="block">Hello</div>
+       
+      <script> 
+
+      $( "#go" ).on( "click", function() {
+        $( "#block" ).animate({
+          width: "70%",
+          margin: "10px",
+          fontSize: "50px",
+          borderWidth: "10px"
+        }, 1500 );
+      });
+
+      </script>
+    
+</body>
+</html>

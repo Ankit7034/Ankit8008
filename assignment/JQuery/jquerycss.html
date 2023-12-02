@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+      .first p {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="first">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+        consectetur officiis debitis repudiandae sed aperiam doloremque.
+        Corrupti suscipit sit dolor, nam id reiciendis repellat excepturi nisi
+        commodi ut dolorum est.
+      </p>
+    </div>
+
+    <script>
+      $("p")
+        .on("mouseenter", function () {
+          $(this).css({
+            "background-color": "yellow",
+            "font-weight": "bolder",
+          });
+        })
+        .on("mouseleave", function () {
+          var styles = {
+            backgroundColor: "pink",
+            fontWeight: "",
+          };
+          $(this).css(styles);
+        });
+    </script>
+  </body>
+</html>
